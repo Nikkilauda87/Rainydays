@@ -1,31 +1,36 @@
 body {
-    font-family: 'Open Sans', Verdana, sans-serif;
-    background-color: #FFFFFF;
+  font-family: "Open Sans", Verdana, sans-serif;
+  background-color: #ffffff;
 }
 
-h1, h2, h3{
-    font-family: 'Open Sans', 'Arial Narrow', Arial, sans-serif;
-    color: #456C8B;
+h1,
+h2,
+h3 {
+  font-family: "Open Sans", "Arial Narrow", Arial, sans-serif;
+  color: #456c8b;
 }
 
+nav {
+  background-color: #fcfcfc;
+}
 nav li {
-    display: inline-block;
+  display: inline-block;
 }
 
 nav a {
-    color:#000000;
-    text-decoration: none;
-    padding: 10px;
+  color: #000000;
+  text-decoration: none;
+  padding: 10px;
 }
 
 nav a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 nav ul {
-    padding: 0px;
+  padding: 0px;
 }
 
-.active {
-    background-color: #930000;
-    color: #FFF;
+footer {
+  background-color: #365c7c;
+}
