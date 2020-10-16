@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rainydays | Checkout</title>
+    <meta name="Rainydays" content="Rain jackets" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/fc5aa7aa22.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html">
+        <img
+          src="images/RainyDays_Logo_original.jpg"
+          alt="Logo for Rainydays"
+          class="logo"
+        />
+      </a>
+      <div class="topbar_logos">
+        <i class="fas fa-shopping-cart"></i> <i class="fas fa-user"></i>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="men.html">Men</a></li>
+          <li><a href="women.html">Women</a></li>
+          <li><a href="index.html">Sale</a></li>
+          <li><a href="index.html">Stories</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <p class="payment-header">Payment</p>
+      <p class="payment-description">Chose payment method below</p>
+      <div class="payment-container">
+      <j class="fas fa-credit-card"></j>
+      <j class="fab fa-cc-paypal"><j>
+      <k class="fab fa-amazon-pay"></k>
+      </div>
+      <div class="form-container">
+      <form action="form-success.php" method="GET">
+        <fieldset class="fieldset_row">
+          <legend class="fieldset_headers">Billing Info</legend>
+          <label class="fieldset_description" for="name">FULL NAME</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form__input"
+            required
+          />
+          <label class="fieldset_description" for="adress">ADDRESS</label>
+          <input
+            type="text"
+            name="address"
+            id="address"
+            class="form__input"
+            required
+          />
+          <div class="city_zip">
+            <label class="fieldset_description" for="city">CITY</label>
+            <input
+              type="text"
+              name="city"
+              id="city"
+              class="form__input"
+              required
+            />
+          </div>
+          <div class="city_zip">
+            <label class="fieldset_description" for="zip code">ZIP CODE</label>
+            <input
+              type="number"
+              name="zip code"
+              id="zip code"
+              class="form__input"
+              required
+            />
+          </div>
+          <label class="fieldset_description" for="countries">COUNTRY:</label>
+          <select name="countries" id="countries" class="form__input" required>
+            <option value="United States">United States</option>
+            <option value="Norway">Norway</option>
+            <option value="Sweden">Sweden</option>
+          </select>
+        </fieldset>
+        <fieldset class="fieldset_row">
+          <legend class="fieldset_headers">Credit Card Info</legend>
+          <label class="fieldset_description" for="card number"
+            >CARD NUMBER</label
+          >
+          <input
+            type="number"
+            name="card number"
+            id="card number"
+            class="form__input"
+            required
+          />
+          <label class="fieldset_description" for="card holder name"
+            >CARD HOLDER NAME</label
+          >
+          <input
+            type="text"
+            name="card holder name"
+            id="card holder name"
+            class="form__input"
+            required
+          />
+          <label class="fieldset_description" for="expire date"
+            >EXPIRE DATE</label
+          >
+          <input
+            type="number"
+            name="expire date"
+            id="expire date"
+            class="form__input"
+            required
+          />
+          <label class="fieldset_description" for="ccv">CCV</label>
+          <input
+            type="number"
+            name="ccv"
+            id="ccv"
+            class="form__input"
+            required
+          />
+        </fieldset>
+        <div class="submit">
+        <input type="submit" value="PURCHASE" />
+      </div>
+      </form>
+    </div>
+    </main>
+    <footer>
+      <p>CONTACT US</p>
+      <p>+?? ??? ?? ???</p>
+      <p>?????@gmail.com</p>
+      <p>Find a Store</p>
+      <p>COSTUMER SERVICE</p>
+      <p>Contact us</p>
+      <p>Ordering & Payment</p>
+      <p>Shipping</p>
+      <p>Returns</p>
+      <p>FAQ</p>
+      <p>INFORMATION</p>
+      <p>Work with US</p>
+      <p>Privacy Policy</p>
+      <p>Terms & Conditions</p>
+      <p>Press Enquiries</p>
+      <p>Subscribe Rainydays offers via Email</p>
+      <p>
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+        officia
+      </p>
+    </footer>
+  </body>
+</html>

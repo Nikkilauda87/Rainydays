@@ -4,17 +4,45 @@
     <title>Rainydays | Home</title>
     <meta name="Rainydays" content="Rain jackets" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/fc5aa7aa22.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
     <link href="css/styles.css" rel="stylesheet" />
   </head>
   <body>
-    <header>
+    <header class="index">
+      <a href="index.html">
+        <img
+          src="images/RainyDays_Logo_original_small.jpg"
+          alt="Logo for Rainydays"
+          class="logo-sm"
+        />
+      </a>
+      <a href="index.html">
+        <img
+          src="images/RainyDays_Logo_original.jpg"
+          alt="Logo for Rainydays"
+          class="logo"
+        />
+      </a>
+     
+      <label class="hamburger-label" for="hamburger-menu"
+        ><k class="fas fa-bars"></k
+      ></label>
+      <input type="checkbox" id="hamburger-menu" />
+      <div class="topbar_logos">
+        <i class="fas fa-shopping-cart"></i> <i class="fas fa-user"></i>
+      </div>
       <nav>
-        <a href="index.html">
-          <img
-            src="images/RainyDays_Logo_original.jpg"
-            alt="Logo for Rainydays"
-          />
-        </a>
         <ul>
           <li><a href="men.html">Men</a></li>
           <li><a href="women.html">Women</a></li>
@@ -25,80 +53,129 @@
       </nav>
     </header>
     <main>
-      <img
-        src="images/picture_main_home.jpg"
-        alt="picture of girl in mountain"
-      />
-      <h1>
-        PUSH THE COMFORT ZONE THIS SEASON<br />
-        SEE OUR NEW COLLECTIONS
-      </h1>
-      <section>
+      <div class="main_background_container">
         <img
-          src="images/picture_collection1_home.jpg"
+          src="images/picture_main_home.jpg"
           alt="picture of collection 1"
+          class="main_background_image"
         />
-      </section>
-      <section>
-        <img
+      </div>
+      <h1>
+        PUSH THE COMFORT ZONE THIS SEASON
+        <br />
+        <span class="italic1">SEE</span> OUR NEW COLLECTIONS
+      </h1>
+      <section class="collection-container">
+        <div class="item-collection">
+          <img
+          src="images/picture_collection1_home.jpg"
+          alt="picture of
+        collection 1"
+          class="collection_image"
+        />
+        <div class="collection-specifications-container">
+          <span class="collection-text-decorations">IPSUM 1 COLLECTION</span>
+        </div>
+        </div>
+        <div class="item-collection">
+          
+          <img
           src="images/picture_collection2_home.jpg"
-          alt="picture of collection 2"
+          alt="picture of
+        collection 2"
+          class="collection_image"
         />
-      </section>
-      <section>
-        <img
+        <div class="collection-specifications-container">
+          <span class="collection-text-decorations">IPSUM 2 COLLECTION</span>
+        </div>
+      
+        </div>
+        <div class="item-collection">
+          
+          <img
           src="images/picture_collection3_home.jpg"
-          alt="picture of collection 3"
+          alt="picture of
+        collection 3"
+          class="collection_image"
         />
-      </section>
-      <section>
-        <img
+        <div class="collection-specifications-container">
+          <span class="collection-text-decorations">IPSUM 3 COLLECTION</span>
+        </div>
+      
+        </div>
+        <div class="item-collection">
+          <img
           src="images/picture_collection4_home.jpg"
-          alt="picture of collection 4"
+          alt="picture of
+        collection 4"
+          class="collection_image"
         />
+        <div class="collection-specifications-container">
+          <span class="collection-text-decorations">IPSUM 4 COLLECTION</span>
+        </div>
+      
+        </div>
       </section>
+   
+
       <h2>
         GO EXPLORE<br />
-        READ STORIES TO GET INSPIRATION
+        <span class="italic2">READ</span> STORIES TO GET INSPIRATION
       </h2>
-      <img
-        src="images/picture_stories_home.jpg"
-        alt="picture of landscape in sunset"
-      />
+      <div class="stories_picture"></div>
     </main>
     <footer>
-      <section>
-        <ul>
-          <li><a href="contactus.html">CONTACT US</a></li>
-          <li><a href="">+?? ??? ?? ???</a></li>
-          <li><a href="">?????@gmail.com</a></li>
-          <li><a href="">Find a Store</a></li>
+      <section class="footer_content_header">
+        <ul class="footer_content_header">
+          <li><a href="" class="footer_content_header">CONTACT US</a></li>
         </ul>
       </section>
-      <section>
-        <ul>
-          <li><a href="">COSTUMER SERVICE</a></li>
-          <li><a href="">Contact us</a></li>
-          <li><a href="">Ordering & Payment</a></li>
-          <li><a href="">Shipping</a></li>
-          <li><a href="">Returns</a></li>
-          <li><a href="">FAQ</a></li>
+      <section class="footer_content_header">
+        <ul class="footer_content_header">
+          <li><a href="" class="footer_content_header">COSTUMER SERVICE</a></li>
         </ul>
       </section>
-      <section>
-        <ul>
-          <li><a href="">INFORMATION</a></li>
-          <li><a href="">Work with US</a></li>
-          <li><a href="">Privacy Policy</a></li>
-          <li><a href="">Terms & Conditions</a></li>
-          <li><a href="">Press Enquiries</a></li>
+      <section class="footer_content_header">
+        <ul class="footer_content_header">
+          <li><a href="" class="footer_content_header">INFORMATION</a></li>
         </ul>
       </section>
-      <section>
-        <ul>
-          <li><a href="">Subscribe Rainydays offers via Email</a></li>
+      <section class="footer_content">
+        <ul class="footer_content">
+          <li><a href="" class="footer_content">CONTACT US</a></li>
+          <li><a href="" class="footer_content">+?? ??? ?? ???</a></li>
+          <li><a href="" class="footer_content">?????@gmail.com</a></li>
+          <li><a href="" class="footer_content">Find a Store</a></li>
+        </ul>
+      </section>
+      <section class="footer_content">
+        <ul class="footer_content">
+          <li><a href="" class="footer_content">COSTUMER SERVICE</a></li>
+          <li><a href="" class="footer_content">Contact us</a></li>
+          <li><a href="" class="footer_content">Ordering & Payment</a></li>
+          <li><a href="" class="footer_content">Shipping</a></li>
+          <li><a href="" class="footer_content">Returns</a></li>
+          <li><a href="" class="footer_content">FAQ</a></li>
+        </ul>
+      </section>
+      <section class="footer_content">
+        <ul class="footer_content">
+          <li><a href="" class="footer_content">INFORMATION</a></li>
+          <li><a href="" class="footer_content">Work with US</a></li>
+          <li><a href="" class="footer_content">Privacy Policy</a></li>
+          <li><a href="" class="footer_content">Terms & Conditions</a></li>
+          <li><a href="" class="footer_content">Press Enquiries</a></li>
+        </ul>
+      </section>
+      <section class="footer_content different">
+        <ul class="footer_content different">
           <li>
-            <a href=""
+            <a href="" class="footer_content different"
+              >Subscribe Rainydays offers via Email</a
+            >
+          </li>
+          <li>
+            <a href="" class="footer_content different"
               >Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
               officia</a
             >
