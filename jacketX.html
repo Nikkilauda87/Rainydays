@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Rainydays | Chart</title>
+    <title>Rainydays | JacketX</title>
     <meta name="Rainydays" content="Rain jackets" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script
@@ -40,7 +40,7 @@
       ></label>
       <input type="checkbox" id="hamburger-menu" />
       <div class="topbar_logos">
-        <i class="fas fa-shopping-cart"></i> <i class="fas fa-user"></i>
+        <a href="chart.html"><i class="fas fa-shopping-cart"></i></a> <i class="fas fa-user"></i>
       </div>
       <nav>
         <ul>
@@ -78,6 +78,11 @@
           <a>Chat With us here</a>
         </div>
       </div>
+      <!--
+      <div class="jacket-popin">
+        <div class="button-index"><a href="chart.html">Go to chart</a></div>
+        <div class="button-index"><a href="index.html">Continou shopping</a></div>
+      </div>-->
         <div class="productdetailpicture-collector">
             <div class="jacket_picture">
             <img
@@ -99,17 +104,26 @@
                     <span class="star-decorations"><l class="fas fa-star"></l></span>
                     <span class="dollar-decorations">200 DOLLARS</span>
                   </div>
-                    <span class="jacketspesification-font">color:</span>
-                    <span class="shirt-decorations"><m class="fas fa-tshirt"></m></span>
-                    <span class="jacketspesification-font">size:</span>
+                    <span class="jacketspesification-font">Choose color:</span>
+                    <input type="radio" name="color" value="Yellow-shirt" id="Yellow-shirt" class="Shirt Yellow-shirt">
+                    <label for="Yellow-shirt"><m class="fas fa-tshirt"></m></label>
+                    <input type="radio" name="color" value="Green-shirt" id="Green-shirt" class="Shirt Green-shirt">
+                    <label for="Green-shirt"><m class="fas fa-tshirt"></m></label>
+                    <input type="radio" name="color" value="Blue-shirt" id="Blue-shirt" class="Shirt Blue-shirt">
+                    <label for="Blue-shirt"><m class="fas fa-tshirt"></m></label>
+                    <span class="jacketspesification-font">Choose size:</span>
                     <div class="size-collector">
                         <div>
-                          <input type="checkbox" name="Small" value="Small" id="Unknown" class="">
-                          <label for="Unknown">??</label>
+                          <input type="radio" name="size" value="Small" id="Small" class="choosen-size">
+                          <label for="Small">S</label>
+                          <input type="radio" name="size" value="Medium" id="Medium" class="choosen-size">
+                          <label for="Medium">M</label>
+                          <input type="radio" name="size" value="Large" id="Large" class="choosen-size">
+                          <label for="Large">L</label>
                         </div>
                       </div>   
             </div>
-            <div class="button-index"><a href="checkout.html">Go to checkout</a></div>
+            <div class="button-index"><a href="">Add to basket</a></div>
           </div>
     </main>
     <footer class="footer-margin-general">
