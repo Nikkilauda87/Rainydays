@@ -100,10 +100,13 @@
       <j class="fab fa-amazon-pay"></j>
       </div>
       <div class="form-container">
-      <form action="form-success.php" method="GET">
+        <div id="formFeedback"></div>
+        <!--<form action="form-success.php" method="GET">-->
+          <form>
         <fieldset class="fieldset_row">
           <legend class="fieldset_headers">Billing Info</legend>
           <label class="fieldset_description" for="name">FULL NAME</label>
+          <div class="form-accept" id="nameAccept"><i class="fas fa-check"></i></div>
           <input
             type="text"
             name="name"
@@ -111,16 +114,20 @@
             class="form__input"
             required
           />
+          <div class="form-error" id="nameError">Not accepted</div>
           <label class="fieldset_description" for="adress">ADDRESS</label>
+          <div class="adressAccept" id="adressAccept"><i class="fas fa-check"></i></div>
           <input
             type="text"
-            name="address"
-            id="address"
+            name="adress"
+            id="adress"
             class="form__input"
             required
           />
+          <div class="form-error" id="adressError">Not accepted</div>
           <div class="city_zip">
             <label class="fieldset_description" for="city">CITY</label>
+            <div class="form-accept" id="cityAccept"><i class="fas fa-check"></i></div>
             <input
               type="text"
               name="city"
@@ -128,16 +135,19 @@
               class="form__input"
               required
             />
+            <div class="form-error" id="cityError">Not accepted</div>
           </div>
           <div class="city_zip">
-            <label class="fieldset_description" for="zip code">ZIP CODE</label>
+            <label class="fieldset_description" for="zipCode">ZIP CODE</label>
+            <div class="form-accept" id="zipCodeAccept"><i class="fas fa-check"></i></div>
             <input
               type="number"
-              name="zip code"
-              id="zip code"
+              name="zipCode"
+              id="zipCode"
               class="form__input"
               required
             />
+            <div class="form-error" id="zipCodeError">Not accepted</div>
           </div>
           <label class="fieldset_description" for="countries">COUNTRY:</label>
           <select name="countries" id="countries" class="form__input" required>
@@ -148,37 +158,73 @@
         </fieldset>
         <fieldset class="fieldset_row">
           <legend class="fieldset_headers">Credit Card Info</legend>
-          <label class="fieldset_description" for="card number"
+          <label class="fieldset_description" for="cardNumber"
             >CARD NUMBER</label
           >
+          <div class="form-accept" id="cardNumberAccept"><i class="fas fa-check"></i></div>
           <input
             type="number"
-            name="card number"
-            id="card number"
+            name="cardNumber"
+            id="cardNumber"
             class="form__input"
             required
           />
-          <label class="fieldset_description" for="card holder name"
+          <div class="form-error" id="cardNumberError">Not accepted</div>
+          <label class="fieldset_description" for="cardHolderName"
             >CARD HOLDER NAME</label
           >
+          <div class="form-accept" id="cardHolderNameAccept"><i class="fas fa-check"></i></div>
           <input
             type="text"
-            name="card holder name"
-            id="card holder name"
+            name="cardHolderName"
+            id="cardHolderName"
             class="form__input"
             required
           />
-          <label class="fieldset_description" for="expire date"
+          <div class="form-error" id="cardHolderNameError">Not accepted</div>
+          <label class="fieldset_description" for="expireDate"
             >EXPIRE DATE</label
           >
-          <input
-            type="number"
-            name="expire date"
-            id="expire date"
+          <div class="form-accept" id="expireDateAccept"><i class="fas fa-check"></i></div>
+          <!--<input
+            type="text"
+            name="expireDate"
+            id="expireDate"
             class="form__input"
             required
-          />
+          />-->
+          <div class="expire">
+          <div class="expire-month">
+            <select id="expireMonth">
+              <option value="0">Month:</option>
+              <option value="1">Jan</option>
+              <option value="2">Feb</option>
+              <option value="3">Mar</option>
+              <option value="4">Apr</option>
+              <option value="5">May</option>
+              <option value="6">Jun</option>
+              <option value="7">Jul</option>
+              <option value="8">Aug</option>
+              <option value="9">Sep</option>
+              <option value="10">Oct</option>
+              <option value="11">Nov</option>
+              <option value="12">Dec</option>
+            </select>
+          </div>
+          <div class="expire-year">
+            <select id="expireYear">
+              <option value="0">Year:</option>
+              <option value="1">2021</option>
+              <option value="2">2022</option>
+              <option value="3">2023</option>
+              <option value="4">2024</option>
+            </select>
+          </div>
+        </div>
+          <div class="form-error form-error-expireMonth" id="expireMonthError">Not accepted</div>
+          <div class="form-error form-error-expireYear" id="expireYearError">Not accepted</div>
           <label class="fieldset_description" for="ccv">CCV</label>
+          <div class="form-accept" id="ccvAccept"><i class="fas fa-check"></i></div>
           <input
             type="number"
             name="ccv"
@@ -186,10 +232,11 @@
             class="form__input"
             required
           />
+          <div class="form-error" id="ccvError">Not accepted</div>
         </fieldset>
         <div class="submit">
         <input class="purchase-submit" type="submit" value="PURCHASE"/>
-        <div class="button-index"><a href="success.html">Testing success</a></div>
+        <!--<div class="button-index"><a href="success.html">Testing success</a></div>-->
       </div>
       </form>
     </div>
@@ -230,5 +277,6 @@
         </div>
       </section>
     </footer>
+    <script src="js/checkout.js"></script>
   </body>
 </html>

@@ -663,7 +663,7 @@ input[name="city"] {
   text-decoration: none;
 }
 
-input[name="zip code"] {
+input[name="zipCode"] {
   padding: 10px;
   width: 40%;
   font-family: Arial, Verdana, sans-serif;
@@ -701,6 +701,59 @@ input[name="zip code"] {
   border: 1px solid black;
   background: white;
   color: black;
+}
+
+#nameError,
+#adressError,
+#cityError,
+#zipCodeError,
+#cardNumberError,
+#cardHolderNameError,
+#expireMonthError,
+#expireYearError,
+#ccvError {
+  display: none;
+  color: red;
+}
+
+#formFeedback {
+  display: none;
+  border: 2px solid green;
+  background: white;
+  padding: 1rem;
+  color: black;
+  margin-bottom: 1rem;
+}
+
+#nameAccept,
+#adressAccept,
+#cityAccept,
+#zipCodeAccept,
+#cardNumberAccept,
+#cardHolderNameAccept,
+#expireDateAccept,
+#ccvAccept {
+  display: none;
+  margin-left: 20px;
+}
+
+.form-error-expireMonth {
+  display: inline-block;
+}
+
+.form-error-expireYear {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.adressAccept {
+  display: none;
+  margin-left: 20px;
+}
+
+.expire-month,
+.expire-year {
+  display: inline-block;
 }
 
 /* --------------------------------------------------- */
@@ -796,6 +849,20 @@ input[name="zip code"] {
   border: 5px solid #555;
 }
 
+.sizeLabel {
+  display: inline-block;
+  border: 1px solid #000;
+  width: 40px;
+  padding: 2px;
+  margin: 2px;
+  background-color: white;
+  text-align: center;
+}
+
+/*
+.setColor {
+  color: blue;
+}*/
 /* --------------------------------------------------- */
 
 /* Stuff for Payment success*/
