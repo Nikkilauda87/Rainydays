@@ -1,6 +1,6 @@
 const resultsContainer = document.querySelector(".jacket-container");
 
-const url = "http://keano.one/wp-json/wc/store/products?per_page=20";
+const url = "https://keano.one/wp-json/wc/store/products?per_page=20";
 
 async function fetchJacket() {
     

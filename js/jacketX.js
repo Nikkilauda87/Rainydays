@@ -32,7 +32,7 @@ const id = params.get("id");
 console.log(id);
 const idNumber = parseInt(id);
 
-const url = "http://keano.one/wp-json/wc/store/products?per_page=20";
+const url = "https://keano.one/wp-json/wc/store/products?per_page=20";
 
 
 async function fetchSpesificJacket() {
