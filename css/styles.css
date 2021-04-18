@@ -471,6 +471,15 @@ div.stories_picture {
   width: 78.32%;
 }
 
+/*.jacket_picture {
+  padding: 10px;
+  position: relative;
+  top: 10.64%;
+  left: 5.87%;
+  height: 100px;
+  width: 150px;
+}*/
+
 .jacket_image {
   width: 100%;
 }
@@ -979,6 +988,43 @@ q {
   font-size: 0.4375rem;
   font-weight: 700;
   text-decoration: none;
+}
+
+/* Stuff for loader */
+
+.loader {
+  border-top: 16px solid #f3f3f3;
+  border-right: 16px solid #f3f3f3;
+  border-bottom: 16px solid #f3f3f3;
+  border-left: 16px solid #f3f3f3;
+  width: 100px;
+  height: 100px;
+  animation: colorchange 4s linear infinite;
+  margin-left: 40%;
+}
+
+@keyframes colorchange {
+  0% {
+    border-top: 16px solid var(--bright-blue);
+  }
+  25% {
+    border-right: 16px solid var(--bright-blue);
+  }
+  50% {
+    border-bottom: 16px solid var(--bright-blue);
+  }
+  75% {
+    border-left: 16px solid var(--bright-blue);
+  }
+}
+
+/* Stuff for error */
+.error {
+  border: 2px solid red;
+  color: black;
+  background: lightgray;
+  padding: 1em;
+  margin-left: 20%;
 }
 
 /* --------------------------------------------------- */
