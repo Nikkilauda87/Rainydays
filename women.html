@@ -58,38 +58,59 @@
       </div>
       <nav>
         <ul>
-          <li><a class="hover-nav" href="men.html">Men</a></li>
-          <li><a class="active-nav hover-nav" href="women.html">Women</a></li>
+          <li><a id="nav-men" class="hover-nav" href="men.html">Men</a></li>
+          <li><a id="nav-women" class="hover-nav" href="women.html">Women</a></li>
           <li><a class="hover-nav" href="index.html">Sale</a></li>
           <li><a class="hover-nav" href="index.html">Stories</a></li>
           <li><a class="hover-nav" href="about.html">About</a></li>
         </ul>
       </nav>
+      <div id="dropdown-Men" class="dropdown-Men">
+        <ul>
+          <li><a href="men.html">All jackets</a></li>
+          <li><a href="index.html">Ipsum 1 Collection</a></li>
+          <li><a href="index.html">Ipsum 2 Collection</a></li>
+          <li><a href="index.html">Ipsum 3 Collection</a></li>
+          <li><a href="index.html">Ipsum 4 Collection</a></li>
+        </ul>
+      </div>
+      <div id="dropdown-Women" class="dropdown-Women">
+        <ul>
+          <li><a href="women.html">All jackets</a></li>
+          <li><a href="index.html">Ipsum 1 Collection</a></li>
+          <li><a href="index.html">Ipsum 2 Collection</a></li>
+          <li><a href="index.html">Ipsum 3 Collection</a></li>
+          <li><a href="index.html">Ipsum 4 Collection</a></li>
+        </ul>
+      </div>
     </header>
     <main>
-      <div class="contact-container">
+      <div id="contact-tab" class="contact-container">
         <a>Contact Us</a>
         <i class="fas fa-phone"></i>
         <i class="fas fa-envelope"></i>
         <i class="fas fa-comment-alt"></i>
       </div>
-      <div class="contactpopup-container">
-        <img
-          src="images/RainyDays_Logo_original_small.jpg"
-          alt="Logo for Rainydays"
-          class="logo-pupup-sm"
-        />
-        <div class="contactpop-item-collector">
-          <i class="fas fa-phone"></i>
-          <a>Call us on +?? ??? ?? ???</a>
-        </div>
-        <div class="contactpop-item-collector">
-          <i class="fas fa-envelope"></i>
-          <a>Mail us on rainydays@mail.com</a>
-        </div>
-        <div class="contactpop-item-collector">
-          <i class="fas fa-comment-alt"></i>
-          <a>Chat With us here</a>
+      <div id="contactpopup-modal" class="contactpopup-modal">
+        <div class="contactpopup-container">
+          <img
+            src="images/RainyDays_Logo_original_small.jpg"
+            alt="Logo for Rainydays"
+            class="logo-pupup-sm"
+          />
+          <span id="contactpopup-modal-close" class="contactpopup-modal-close">&#10005</span>
+          <div class="contactpop-item-collector">
+            <i class="fas fa-phone"></i>
+            <a>Call us on +?? ??? ?? ???</a>
+          </div>
+          <div class="contactpop-item-collector">
+            <i class="fas fa-envelope"></i>
+            <a>Mail us on rainydays@mail.com</a>
+          </div>
+          <div class="contactpop-item-collector">
+            <i class="fas fa-comment-alt"></i>
+            <a>Chat With us here</a>
+          </div>
         </div>
       </div>
       <div class="women_background_container">
@@ -342,6 +363,7 @@
       </section>
     </footer>
     <script src="js/components/errorMessage.js"></script>
+    <script src="js/components/dropdown.js"></script>
     <script src="js/women.js"></script>
   </body>
 </html>
